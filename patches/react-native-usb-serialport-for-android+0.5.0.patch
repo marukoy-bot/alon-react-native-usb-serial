@@ -1,0 +1,129 @@
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build.gradle b/node_modules/react-native-usb-serialport-for-android/android/build.gradle
+index da7756d..d7c76f7 100644
+--- a/node_modules/react-native-usb-serialport-for-android/android/build.gradle
++++ b/node_modules/react-native-usb-serialport-for-android/android/build.gradle
+@@ -19,7 +19,8 @@ def safeExtGet(prop, fallback) {
+ }
+ 
+ android {
+-    compileSdkVersion safeExtGet('UsbSerialportForAndroid_compileSdkVersion', 30)
++    namespace "com.bastengao.usbserialport"
++    compileSdkVersion rootProject.ext.compileSdkVersion
+     defaultConfig {
+         minSdkVersion safeExtGet('UsbSerialportForAndroid_minSdkVersion', 16)
+         targetSdkVersion safeExtGet('UsbSerialportForAndroid_targetSdkVersion', 30)
+@@ -51,7 +52,7 @@ repositories {
+     maven { url 'https://jitpack.io' }
+     google()
+     mavenCentral()
+-    jcenter()
++    // jcenter()
+ }
+ 
+ dependencies {
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/generated/source/buildConfig/release/com/melihyarikkaya/rnserialport/BuildConfig.java b/node_modules/react-native-usb-serialport-for-android/android/build/generated/source/buildConfig/release/com/melihyarikkaya/rnserialport/BuildConfig.java
+new file mode 100644
+index 0000000..2afe31d
+--- /dev/null
++++ b/node_modules/react-native-usb-serialport-for-android/android/build/generated/source/buildConfig/release/com/melihyarikkaya/rnserialport/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.melihyarikkaya.rnserialport;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = false;
++  public static final String LIBRARY_PACKAGE_NAME = "com.melihyarikkaya.rnserialport";
++  public static final String BUILD_TYPE = "release";
++}
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/annotation_processor_list/release/javaPreCompileRelease/annotationProcessors.json b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/annotation_processor_list/release/javaPreCompileRelease/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/annotation_processor_list/release/javaPreCompileRelease/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar
+new file mode 100644
+index 0000000..cc87640
+Binary files /dev/null and b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar differ
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/compile_symbol_list/release/generateReleaseRFile/R.txt b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/compile_symbol_list/release/generateReleaseRFile/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml
+new file mode 100644
+index 0000000..3da5bbe
+--- /dev/null
++++ b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\alon-react-USB\alon\node_modules\react-native-usb-serialport-for-android\android\src\main\jniLibs"/></dataSet><dataSet config="release" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\alon-react-USB\alon\node_modules\react-native-usb-serialport-for-android\android\src\release\jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/release/packageReleaseResources/compile-file-map.properties b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/release/packageReleaseResources/compile-file-map.properties
+new file mode 100644
+index 0000000..4a357b0
+--- /dev/null
++++ b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/release/packageReleaseResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Sun Nov 02 06:28:13 CST 2025
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/release/packageReleaseResources/merger.xml b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/release/packageReleaseResources/merger.xml
+new file mode 100644
+index 0000000..0b0a3bd
+--- /dev/null
++++ b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/incremental/release/packageReleaseResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\alon-react-USB\alon\node_modules\react-native-usb-serialport-for-android\android\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\alon-react-USB\alon\node_modules\react-native-usb-serialport-for-android\android\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\alon-react-USB\alon\node_modules\react-native-usb-serialport-for-android\android\src\release\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\alon-react-USB\alon\node_modules\react-native-usb-serialport-for-android\android\src\release\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\alon-react-USB\alon\node_modules\react-native-usb-serialport-for-android\android\build\generated\res\resValues\release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\alon-react-USB\alon\node_modules\react-native-usb-serialport-for-android\android\build\generated\res\resValues\release"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/bastengao/usbserialport/EventSender.class b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/bastengao/usbserialport/EventSender.class
+new file mode 100644
+index 0000000..93254e7
+Binary files /dev/null and b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/bastengao/usbserialport/EventSender.class differ
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/local_only_symbol_list/release/parseReleaseLocalResources/R-def.txt b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/local_only_symbol_list/release/parseReleaseLocalResources/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/local_only_symbol_list/release/parseReleaseLocalResources/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/nested_resources_validation_report/release/generateReleaseResources/nestedResourcesValidationReport.txt b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/nested_resources_validation_report/release/generateReleaseResources/nestedResourcesValidationReport.txt
+new file mode 100644
+index 0000000..08f4ebe
+--- /dev/null
++++ b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/nested_resources_validation_report/release/generateReleaseResources/nestedResourcesValidationReport.txt
+@@ -0,0 +1 @@
++0 Warning/Error
+\ No newline at end of file
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/symbol_list_with_package_name/release/generateReleaseRFile/package-aware-r.txt b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/symbol_list_with_package_name/release/generateReleaseRFile/package-aware-r.txt
+new file mode 100644
+index 0000000..35bc8c4
+--- /dev/null
++++ b/node_modules/react-native-usb-serialport-for-android/android/build/intermediates/symbol_list_with_package_name/release/generateReleaseRFile/package-aware-r.txt
+@@ -0,0 +1 @@
++com.melihyarikkaya.rnserialport
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/src/main/AndroidManifest.xml b/node_modules/react-native-usb-serialport-for-android/android/src/main/AndroidManifest.xml
+index b886238..f65ffc9 100644
+--- a/node_modules/react-native-usb-serialport-for-android/android/src/main/AndroidManifest.xml
++++ b/node_modules/react-native-usb-serialport-for-android/android/src/main/AndroidManifest.xml
+@@ -1,4 +1,3 @@
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+-          package="com.bastengao.usbserialport">
++<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+     <uses-feature android:name="android.hardware.usb.host" />
+ </manifest>
+diff --git a/node_modules/react-native-usb-serialport-for-android/android/src/main/java/com/bastengao/usbserialport/UsbSerialportForAndroidModule.java b/node_modules/react-native-usb-serialport-for-android/android/src/main/java/com/bastengao/usbserialport/UsbSerialportForAndroidModule.java
+index 7e20282..70ec32e 100644
+--- a/node_modules/react-native-usb-serialport-for-android/android/src/main/java/com/bastengao/usbserialport/UsbSerialportForAndroidModule.java
++++ b/node_modules/react-native-usb-serialport-for-android/android/src/main/java/com/bastengao/usbserialport/UsbSerialportForAndroidModule.java
+@@ -29,7 +29,7 @@ import java.util.Map;
+ @ReactModule(name = UsbSerialportForAndroidModule.NAME)
+ public class UsbSerialportForAndroidModule extends ReactContextBaseJavaModule implements EventSender {
+     public static final String NAME = "UsbSerialportForAndroid";
+-    private static final String INTENT_ACTION_GRANT_USB = BuildConfig.LIBRARY_PACKAGE_NAME + ".GRANT_USB";
++    private static final String INTENT_ACTION_GRANT_USB = "com.bastengao.usbserialport.GRANT_USB";
+ 
+     public static final String CODE_DEVICE_NOT_FOND = "device_not_found";
+     public static final String CODE_DRIVER_NOT_FOND = "driver_not_found";

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CH340 USB to Serial -->
+    <usb-device vendor-id="6790" product-id="29987" />
+    
+    <!-- CP2102 USB to Serial -->
+    <usb-device vendor-id="4292" product-id="60000" />
+    
+    <!-- FTDI USB to Serial -->
+    <usb-device vendor-id="1027" />
+    
+    <!-- Allow all USB devices (less secure but easier) -->
+    <!-- <usb-device class="255" /> -->
+</resources>
