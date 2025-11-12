@@ -6,4 +6,4 @@
 The android app component of [Alon hardware](https://github.com/marukoy-bot/proj-Alon-hardware). It visualizes the data sent by the Alon hardware through USB Serial via USB OTG
 
 # APK
-Compiled apk can be found [here](android\app\build\outputs\apk\release\app-release.apk)
+Compiled apk can be found [here](app-release.apk)
