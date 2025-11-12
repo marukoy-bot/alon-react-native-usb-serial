@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" alt="Alon icon" width=600/>
+    <img src="android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" alt="Alon icon" width=350/>
 </div>
 
 # Alon
