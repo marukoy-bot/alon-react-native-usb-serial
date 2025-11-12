@@ -7,3 +7,9 @@ The android app component of [Alon hardware](https://github.com/marukoy-bot/proj
 
 # APK
 Compiled apk can be found [here](app-release.apk)
+
+# Compilation
+Clone the repo and go to `android` folder then type the commands <br>
+`cd android` <br>
+`gradlew clean` <br>
+`gradlew assembleRelease`
